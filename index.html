@@ -1,0 +1,46 @@
+<head>
+    <title> Music </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class ="navbar">
+        <img src= "m.png" class="logo">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SPECIFICATIONS</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONNECT</a></li>
+            </ul>
+      </div>
+      <div class="hi">
+          <h>By Harshitha Reddy Mamidi</h>
+      </div>
+      <div class="content">
+        <div class="l">
+              <h1>MUSIC<br>IS<br>MY<br>ART!!</h1>
+          </div>
+          <div class="r">
+            <p>Click here to Listen....</p>
+            <img src= "lk.png" id="icon">
+          </div>
+    </div>
+    <audio id="mysong">
+        <source src="Alessia Cara - Scars To Your Beautiful (Lyrics).mp3">
+    </audio>
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            if(mysong.paused){
+            mysong.play();
+            icon.src="pause.jpg";
+        }else{
+            mysong.pause();
+            icon.src="lk.png";
+        }
+    }
+    </script>
+  </body>
+  
